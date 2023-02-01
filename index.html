@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="section">
+        <div class="container">
+            <div class="first-img"><img src="image/register-button.png" alt=""></div>
+            <div class="second-img"><img src="image/user_pic.png" alt=""></div>
+            <div class="third-img"><img src="image/ludo_pic.png" alt=""></div>
+            <div class="four-img"><img src="image/reward_pic.png" alt=""></div>
+        </div>
+        <!-- //------------From apper here -->
+        <div class="form-container">
+            <form action="">
+                <form action="">
+                    <a href="" class="cross-button"><i class="fa fa-times" aria-hidden="true"></i></a>
+                    <!-- <div class="input-box">
+                    <img src="images/wellcome-img.png" alt="">
+                </div> -->
+                    <div class="input-box">
+                        <label for="">Name</label>
+                        <input type="text" placeholder="Name" id="name">
+                    </div>
+                    <div class="input-box">
+                        <label for="">User Name</label>
+                        <input type="text" placeholder="user-name" id="username">
+                    </div>
+                    <div class="input-box">
+                        <label for="">Email</label>
+                        <input type="email" placeholder="Email" id="email">
+                    </div>
+
+                    <p id="error"></p>
+                    <div class="button-box">
+                        <button id="Register_btn">Register</button>
+
+                    </div>
+                </form>
+        </div>
+        <!-- ------------ it is dice html  -->
+        <div class="dice-container">
+
+            <div class="dice-box">
+                <a href="" class="cross-button"><i class="fa fa-times" aria-hidden="true"></i></a>
+                <div class="img-box ">
+                    <img src="image/dice.png " alt="" style="width: 188px;
+                    height: 180px;">
+                </div>
+                <div class="left">
+                    <div class="score-box">
+                        <h2>Total Score: <span id="Total_score">0</span> </h2>
+
+                        <h2>Roll Left: <span id="roll_left">3</span> </h2>
+                    </div>
+                    <button id="dice_roll_btn">Roll The Dice</button>
+
+                </div>
+
+            </div>
+        </div>
+        <!-- congration box -->
+        <div class="congration-outer">
+            <div class="congration-container">
+                <a href="" class="cross-button"><i class="fa fa-times" aria-hidden="true"></i></a>
+                <div class="congration-box">
+                    <div class="imgBox">
+                        <img src="./image/logo.png" alt="" />
+                    </div>
+                    <h2 class="title">Congratulations You Won This! 🌟</h2>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="script.js"></script>
+    <script src="./confetti.min.js"></script>
+</body>
+
+</html>

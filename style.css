@@ -1,0 +1,254 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.container div {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  padding: 1rem;
+}
+.section .container div {
+}
+.section .container div img {
+  width: 250px;
+  height: 260px;
+}
+.section .container .second-img,
+.third-img,
+.four-img {
+  opacity: 0.1;
+  pointer-events: none;
+  /* cursor: not-allowed; */
+}
+.section {
+  position: relative;
+}
+.form-container,
+.dice-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: opacity 0.3s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100p;
+  z-index: 1000;
+  width: 100%;
+  height: 100vh;
+  visibility: hidden;
+}
+.hide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.1);
+
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: opacity 0.3s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100p;
+  z-index: 1000;
+  width: 100%;
+  height: 100vh;
+  visibility: visible;
+}
+
+form {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 30%;
+  gap: 1rem;
+  padding: 1rem;
+  position: relative;
+}
+.input-box label {
+  display: block;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+.input-box input {
+  width: 95%;
+  /* background-color: #ccc; */
+  font-size: 1rem;
+  padding: 0.4rem;
+  outline: none;
+}
+button {
+  background-color: #2196f3;
+  padding: 0.8rem;
+  color: #fff;
+  display: block;
+  width: 100%;
+  margin: 0.5rem;
+  border: none;
+  border-radius: 10px;
+}
+.cross-button i {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 1.5rem;
+}
+#error {
+  color: red;
+}
+/* -----------------------------------------------dice css *============================ */
+.dice-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dice-box {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  height: 500px;
+  width: 40%;
+  background-color: #fff;
+  position: relative;
+}
+
+.dice-box img {
+  width: 100px;
+}
+
+#dice_roll_btn {
+  /* padding: 0.5rem;
+  background: #ee3a04;
+  color: #fff;
+  border: 1px solid black;
+  border-radius: 9px;
+  font-size: 1.2rem; */
+  align-items: center;
+  background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #ffffff;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 3px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+  padding: 1rem;
+}
+
+.animation_img {
+  animation-name: rollDice;
+  animation-duration: 6s;
+}
+
+.left {
+  display: flex;
+  /* align-items: center; */
+  flex-direction: column;
+  width: 90%;
+  padding: 1rem;
+}
+
+.left .score-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+@keyframes rollDice {
+  0% {
+    rotate: 0deg;
+  }
+
+  10% {
+    rotate: 360deg;
+  }
+
+  15% {
+    rotate: 0deg;
+  }
+
+  25% {
+    rotate: 360deg;
+  }
+
+  30% {
+    rotate: 0deg;
+  }
+
+  40% {
+    rotate: 360deg;
+  }
+
+  80% {
+    rotate: 360deg;
+  }
+
+  100% {
+    rotate: 360deg;
+  }
+}
+/* --------------------------congratulation */
+.congration-outer {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  display: grid;
+  place-items: center;
+  top: 0;
+  display: none;
+}
+.congration-container {
+  position: relative;
+  width: 80%;
+  height: 80vh;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.title {
+  color: green;
+}
+.congration-box .imgBox img {
+  width: 400px;
+}
+/* .congration-box {
+  padding: 30px 40px;
+  background: #fff;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 650px;
+  border-radius: 10px;
+  border: 1px solid rgb(202, 7, 7);
+  display: none;
+  pointer-events: none;
+} */
+
+.disable {
+  opacity: 0.1;
+}
